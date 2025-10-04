@@ -12,16 +12,17 @@
       background-color: #f8f9fa;
       font-family: "Segoe UI", sans-serif;
       margin: 0;
+      padding: 0;
     }
 
-    /* === SIDEBAR (Desktop) === */
+    /* Desktop Sidebar */
     .sidebar {
       background-color: #111;
       color: white;
       height: 100vh;
-      width: 25%;
-      position: fixed;
       padding-top: 2rem;
+      position: fixed;
+      width: 25%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -30,10 +31,10 @@
     .sidebar img {
       width: 120px;
       height: 120px;
-      border-radius: 50%;
       object-fit: cover;
-      border: 3px solid white;
+      border-radius: 50%;
       margin-bottom: 1rem;
+      border: 3px solid white;
     }
 
     .sidebar h3 {
@@ -42,8 +43,8 @@
     }
 
     .sidebar p {
-      color: #bbb;
       margin: 0;
+      color: #bbb;
       text-align: center;
     }
 
@@ -65,10 +66,11 @@
       background-color: #333;
     }
 
-    /* === CONTENT === */
+    /* Content */
     .content {
       margin-left: 25%;
       padding: 3rem;
+      min-height: 100vh;
       scroll-behavior: smooth;
     }
 
@@ -82,11 +84,25 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
+    .welcome-section h1 {
+      font-weight: 700;
+      font-size: 2.2rem;
+    }
+
+    .welcome-section p {
+      color: #ccc;
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
     .card {
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border: none;
-      margin-bottom: 2rem;
     }
 
     .card-body {
@@ -105,41 +121,37 @@
       font-size: 1rem;
     }
 
-    /* === MOBILE NAVBAR === */
-    .mobile-nav {
-      display: none;
-    }
-
-    @media (max-width: 992px) {
+    /* Mobile Responsive */
+    @media (max-width: 991px) {
       .sidebar {
         display: none;
       }
 
-      .mobile-nav {
-        display: block;
+      .content {
+        margin-left: 0;
+        padding-top: 6rem;
+      }
+
+      .navbar {
         background-color: #111;
       }
 
-      .navbar-brand,
-      .nav-link {
-        color: white !important;
+      .navbar-brand {
+        color: white;
+        font-weight: bold;
       }
 
       .navbar-toggler {
-        border-color: #666;
+        border-color: #555;
       }
 
-      .navbar-toggler-icon {
-        filter: invert(1);
+      .navbar-nav .nav-link {
+        color: white;
+        text-align: center;
       }
 
-      .content {
-        margin: 0;
-        padding: 1.5rem;
-      }
-
-      .welcome-section {
-        padding: 1.5rem;
+      .navbar-nav .nav-link:hover {
+        background-color: #333;
       }
     }
   </style>
@@ -147,18 +159,16 @@
 
 <body>
 
-  <!-- === MOBILE NAVBAR === -->
-  <nav class="navbar navbar-expand-lg mobile-nav fixed-top">
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top d-lg-none">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">CJ’s Profile</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">CJ’s Profile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <div class="collapse navbar-collapse bg-dark" id="navbarNav">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -168,8 +178,8 @@
     </div>
   </nav>
 
-  <!-- === SIDEBAR (Desktop Only) === -->
-  <div class="sidebar">
+  <!-- Desktop Sidebar -->
+  <div class="sidebar d-none d-lg-flex">
     <a href="index.html"><img src="pics/webpic.png" alt="Profile Picture"></a>
     <h3>Christopher Jr. A. Artuz</h3>
     <p>Age: 20</p>
@@ -184,9 +194,9 @@
     </div>
   </div>
 
-  <!-- === MAIN CONTENT === -->
+  <!-- Content -->
   <div class="content">
-    <section id="home" class="mt-5 mt-lg-0">
+    <section id="home">
       <div class="welcome-section">
         <h1>Welcome to My Profile!</h1>
         <p>Explore my journey, skills, and projects — all in one place.</p>
@@ -198,11 +208,12 @@
         <div class="card-body">
           <h2>About Me</h2>
           <p>
-            Hello! I'm CJ, a passionate IT student at the Polytechnic University of the Philippines Sto. Tomas Branch
-            who loves learning new technologies and solving real-world problems.
+            Hello! I'm CJ, a passionate IT student at the Polytechnic University of the Philippines Sto.
+            Tomas Branch who loves learning new technologies and solving real-world problems.
             I enjoy exploring web development, systems integration, and creative design projects.
             <br><br>
-            Aside from academics, I am a Tenor Saxophonist at the Talisay Oriental Symphonic Band, Talisay Batangas.
+            Aside from academics, I am a Tenor Saxophonist at the Talisay Oriental Symphonic Band, Talisay
+            Batangas.
           </p>
         </div>
       </div>
@@ -247,8 +258,8 @@
             <strong>ATHLETO</strong> — A Flask-based e-commerce web app for sportswear.<br>
             <strong>Network Simulation Project</strong> — Cisco Packet Tracer setup with ACL and DHCP.<br>
             <strong>Personal Portfolio</strong> — A responsive site showcasing my skills and works.<br>
-            <strong>Beast Breaker</strong> — A Python-based game built using Pygame, focused on skill and reflex challenges.<br>
-            <strong>Sonore Music</strong> — A PHP and XAMPP-powered online music store with a clean UI and product management features.
+            <strong>Beast Breaker</strong> — A Python-based game built using Pygame.<br>
+            <strong>Sonore Music</strong> — A PHP and XAMPP-powered online music store.
           </p>
         </div>
       </div>
@@ -267,6 +278,17 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+  <!-- Auto-Close Navbar Dropdown -->
+  <script>
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbar = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('show')) {
+          new bootstrap.Collapse(navbar).hide();
+        }
+      });
+    });
+  </script>
+</body>
 </html>
