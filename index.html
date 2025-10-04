@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CJ’s Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .sidebar {
+            background-color: #111;
+            color: white;
+            height: 100vh;
+            padding-top: 2rem;
+            position: fixed;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid white;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .sidebar p {
+            margin: 0;
+            color: #bbb;
+            text-align: center;
+        }
+
+        .nav-links {
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .nav-links a {
+            display: block;
+            text-align: center;
+            padding: 0.8rem;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #333;
+        }
+
+        .content {
+            margin-left: 25%;
+            padding: 3rem;
+            height: 100vh;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        .welcome-section {
+            background-color: #222;
+            color: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-section h1 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        .welcome-section p {
+            color: #ccc;
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+
+        .card-body {
+            padding: 2rem;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+
+        p,
+        li {
+            color: #444;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="index.html"><img src="pics/webpic.png" alt="Profile Picture"></a>
+        <h3>Christopher Jr. A. Artuz</h3>
+        <p>Age: 20</p>
+        <p>Nickname: CJ</p>
+
+        <div class="nav-links mt-4">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <section id="home">
+            <div class="welcome-section">
+                <h1>Welcome to My Profile!</h1>
+                <p>Explore my journey, skills, and projects — all in one place.</p>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="card">
+                <div class="card-body">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm CJ, a passionate IT student at the Polytechnic University of the Philippines Sto.
+                        Tomas Branch who loves learning new technologies and solving real-world problems.
+                        I enjoy exploring web development, systems integration, and creative design projects.
+                        <br><br>
+                        Aside from academics, I am a Tenor Saxophonist at the Talisay Oriental Symphonic Band, Talisay
+                        Batangas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Education</h2>
+                    <p>
+                        <strong>
+                            Polytechnic University of the Philippines Sto. Tomas Branch<br>
+                            Bachelor of Science in Information Technology<br>
+                            Member of the Computer Society<br>
+                        </strong>
+                        3rd Year Student<br>
+                        Passionate about web technologies, data management, and software design.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Basic Web Development (HTML, CSS, Flask, Bootstrap)</li>
+                        <li>Basic Database Management (SQLite, MySQL)</li>
+                        <li>Basic Networking Basics and System Configuration</li>
+                        <li>Basic Creative Design & Front-End Styling</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Projects</h2>
+                    <p>
+                        <strong>ATHLETO</strong> — A Flask-based e-commerce web app for sportswear.<br>
+                        <strong>Network Simulation Project</strong> — Cisco Packet Tracer setup with ACL and DHCP.<br>
+                        <strong>Personal Portfolio</strong> — A responsive site showcasing my skills and works.<br>
+                        <strong>Beast Breaker</strong> — A Python-based game built using Pygame, focused on skill and
+                        reflex challenges.<br>
+                        <strong>Sonore Music</strong> — A PHP and XAMPP-powered online music store with a clean UI and
+                        product management features.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:artuzjrchristopher@gmail.com">artuzjrchristopher@gmail.com</a></p>
+                    <p>Facebook: <a href="https://www.facebook.com/cj.artuz" target="_blank">facebook.com/cj.artuz</a>
+                    </p>
+                    <p>GitHub: <a href="https://github.com/sijey-CJAA" target="_blank">github.com/sijey-CJAA</a></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
