@@ -26,14 +26,6 @@
                 style="color:#6c757d;">Home</small></a>
             <a href="#about" class="me-3" style="text-decoration:none;"><small class="nav-small"
                 style="color:#6c757d;">About</small></a>
-            <a href="#education" class="me-3" style="text-decoration:none;"><small class="nav-small"
-                style="color:#6c757d;">Education</small></a>
-            <a href="#skills" class="me-3" style="text-decoration:none;"><small class="nav-small"
-                style="color:#6c757d;">Skills</small></a>
-            <a href="#projects" class="me-3" style="text-decoration:none;"><small class="nav-small"
-                style="color:#6c757d;">Projects</small></a>
-            <a href="#contact" class="me-3" style="text-decoration:none;"><small class="nav-small"
-                style="color:#6c757d;">Contact</small></a>
 
             <!-- Night Mode Toggle -->
             <button id="modeToggle" type="button" class="btn btn-sm ms-3 px-3 py-1 fw-semibold text-light border-0"
@@ -45,213 +37,327 @@
     </div>
   </div>
 
-  
+
 
   <div class="container p-4 mt-5">
     <div class="row">
-      <div class="col-lg-12"
-        style="background-color:#222; color:white; border-radius:15px; padding:2.5rem; text-align:center; margin-bottom:3rem; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-        <h1 style="font-weight:700; font-size:2.2rem; margin:0; color:#ccc;">Welcome to My Profile!</h1>
-        <p style="color:#ccc; margin-top:.5rem; font-size:1.1rem;">Explore my journey, skills, and projects — all in one
-          place.</p>
+      <div class="col-lg-12 text-center mb-5 shadow-sm rounded-4 p-5" style="background: rgba(255, 255, 255, 0.1);
+             color: #e0e0e0;
+             backdrop-filter: blur(10px);
+             -webkit-backdrop-filter: blur(10px);
+             border: 1px solid rgba(255, 255, 255, 0.2);
+             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+             transition: all 0.3s ease;">
+        <h1 class="fw-bold fs-2 mb-2 text-primary">Hi I'm Christopher Jr. A. Artuz</h1>
+        <p class="fs-5 mb-0 text-primary">
+          <br>Welcome to My Profile!
+          Below are information about me, and my work.
+        </p>
       </div>
     </div>
   </div>
 
 
+
+
   <!-- Content -->
-  <div class="content" style="margin-left:0; padding:3rem; min-height:100vh; scroll-behavior:smooth;">
-    <section id="about" style="scroll-margin-top:120px;">
-      <div class="card"
-        style="margin:18px 0; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border:none; background:linear-gradient(135deg, #ffffff, #eaf6ff); transition:all .4s;">
-        <div class="card-body" style="padding:2rem;">
-          <h2 style="font-weight:600; color:#0078d7; margin-bottom:1rem;">About Me</h2>
-          <p style="color:#6c757d; font-size:1rem; line-height:1.6;">
-            Hello! I'm Christopher Jr. A. Artuz but you can call me CJ, I'm a passionate IT student at the Polytechnic
-            University of the Philippines Sto. Tomas Branch who loves learning new technologies and trying on solving
-            real-world problems. I enjoy exploring web development, systems integration, and creative design projects.
-            <br><br>
-            Aside from academics, I am a Tenor Saxophonist at the Talisay Oriental Symphonic Band, Talisay Batangas.
-          </p>
+  <div class="content" style="margin-left:0; min-height:100vh; scroll-behavior:smooth;">
+
+    <section id="about" class="py-2" style="scroll-margin-top:120px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+
+            <!-- Clickable header -->
+            <button class="btn btn-gray w-100 text-primary border-white fw-semibold py-3 fs-5 rounded-4 shadow"
+              type="button" data-bs-toggle="collapse" data-bs-target="#aboutContent" aria-expanded="false"
+              aria-controls="aboutContent" style="transition: all 0.25s ease-in-out;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.2)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';">
+              About Me
+            </button>
+
+
+
+            <!-- Collapsible card -->
+            <div class="collapse mt-3" id="aboutContent">
+              <div class="card border-0 rounded-4 shadow-lg bg-gradient"
+                style="background: linear-gradient(135deg, #ffffff, #eaf6ff);">
+                <div class="card-body p-4 border-white">
+                  <h2 class="fw-semibold text-primary mb-3">About Me</h2>
+                  <p class="text-secondary fs-6 lh-lg mb-0">
+                    Hello! I'm <strong>Christopher Jr. A. Artuz</strong>, but you can call me <strong>CJ</strong>. I'm a
+                    passionate IT student at the Polytechnic University of the Philippines, Sto. Tomas Branch, who loves
+                    learning new technologies and solving real-world problems. I enjoy exploring web development,
+                    systems
+                    integration, and creative design projects.
+                    <br><br>
+                    Aside from academics, I am a <strong>Tenor Saxophonist</strong> at the Talisay Oriental Symphonic
+                    Band,
+                    Talisay Batangas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="education" style="scroll-margin-top:120px;">
-      <div class="card"
-        style="margin:18px 0; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border:none; background:linear-gradient(135deg, #ffffff, #eaf6ff); transition:all .4s;">
-        <div class="card-body" style="padding:2rem;">
-          <h2 style="font-weight:600; color:#0078d7; margin-bottom:1rem;">Education</h2>
-          <p style="color:#6c757d; font-size:1rem; line-height:1.6;">
-            <strong style="color:#222;">Polytechnic University of the Philippines Sto. Tomas Branch<br>
-              Bachelor of Science in Information Technology<br>
-              Member of the Computer Society</strong><br>
-            3rd Year Student<br>
-            Passionate about web technologies, data management, and software design.
-          </p>
+    <!-- EDUCATION -->
+    <section id="education" class="py-2" style="scroll-margin-top:50px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <button class="btn btn-gray w-100 text-primary border-white fw-semibold py-3 fs-5 rounded-4 shadow"
+              type="button" data-bs-toggle="collapse" data-bs-target="#educationContent" aria-expanded="false"
+              aria-controls="educationContent" style="transition: all 0.25s ease-in-out;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.2)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';">
+              Education
+            </button>
+
+            <div class="collapse mt-3" id="educationContent">
+              <div class="card border-0 rounded-4 shadow-lg bg-gradient"
+                style="background: linear-gradient(135deg, #ffffff, #eaf6ff);">
+                <div class="card-body p-4">
+                  <h2 class="fw-semibold text-primary mb-3">Education</h2>
+                  <p class="text-gray fs-6 lh-lg mb-0">
+                    <strong class="text-gray">Polytechnic University of the Philippines Sto. Tomas Branch<br>
+                      Bachelor of Science in Information Technology<br>
+                      Member of the Computer Society</strong><br>
+                    3rd Year Student<br>
+                    Passionate about web technologies, data management, and software design.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" style="scroll-margin-top:120px;">
-      <div class="card"
-        style="margin:18px 0; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border:none; background:linear-gradient(135deg, #ffffff, #eaf6ff); transition:all .4s;">
-        <div class="card-body" style="padding:2rem;">
-          <h2 style="font-weight:600; color:#0078d7; margin-bottom:1rem;">Skills</h2>
-          <ul style="color:#6c757d; font-size:1rem; text-align:left;">
-            <li>Basic Web Development (HTML, CSS, Flask, Bootstrap)</li>
-            <li>Basic Database Management (SQLite, MySQL)</li>
-            <li>Basic Networking and System Configuration</li>
-            <li>Basic Creative Design & Front-End Styling</li>
-          </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="py-2" style="scroll-margin-top:120px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <button class="btn btn-gray w-100 text-primary border-white fw-semibold py-3 fs-5 rounded-4 shadow"
+              type="button" data-bs-toggle="collapse" data-bs-target="#skillsContent" aria-expanded="false"
+              aria-controls="skillsContent" style="transition: all 0.25s ease-in-out;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.2)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';">
+              Skills
+            </button>
+
+            <div class="collapse mt-3" id="skillsContent">
+              <div class="card border-0 rounded-4 shadow-lg bg-gradient"
+                style="background: linear-gradient(135deg, #ffffff, #eaf6ff);">
+                <div class="card-body p-4">
+                  <h2 class="fw-semibold text-primary mb-3">Skills</h2>
+                  <ul class="text-secondary fs-6 lh-lg text-start mb-0">
+                    <li>Basic Web Development (HTML, CSS, Flask, Bootstrap)</li>
+                    <li>Basic Database Management (SQLite, MySQL)</li>
+                    <li>Basic Networking and System Configuration</li>
+                    <li>Basic Creative Design & Front-End Styling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" style="scroll-margin-top:120px;">
-      <div class="card"
-        style="margin:18px 0; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border:none; background:linear-gradient(135deg, #ffffff, #eaf6ff); transition:all .4s;">
-        <div class="card-body" style="padding:2rem;">
-          <h2 style="font-weight:600; color:#0078d7; margin-bottom:1rem;">Projects</h2>
-          <p style="color:#6c757d; font-size:1rem; line-height:1.6; text-align:left;">
-            <strong>ATHLETO</strong><br> A Flask-based e-commerce web app for sportswear.<br>
-            <strong>Network Simulation Project</strong><br> Cisco Packet Tracer setup with ACL and DHCP.<br>
-            <strong>Personal Portfolio</strong><br> A responsive site showcasing my skills and works.<br>
-            <strong>Beast Breaker</strong><br> A Python-based game built using Pygame.<br>
-            <strong>Sonore Music</strong><br> A PHP and XAMPP-powered online music store.
-          </p>
+    <!-- PROJECTS -->
+    <section id="projects" class="py-2" style="scroll-margin-top:120px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <button class="btn btn-gray w-100 text-primary border-white fw-semibold py-3 fs-5 rounded-4 shadow"
+              type="button" data-bs-toggle="collapse" data-bs-target="#projectsContent" aria-expanded="false"
+              aria-controls="projectsContent" style="transition: all 0.25s ease-in-out;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.2)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';">
+              Projects
+            </button>
+
+            <div class="collapse mt-3" id="projectsContent">
+              <div class="card border-0 rounded-4 shadow-lg bg-gradient"
+                style="background: linear-gradient(135deg, #ffffff, #eaf6ff);">
+                <div class="card-body p-4">
+                  <h2 class="fw-semibold text-primary mb-3">Projects</h2>
+                  <p class="text-secondary fs-6 lh-lg text-start mb-0">
+                    <strong>ATHLETO</strong><br> A Flask-based e-commerce web app for sportswear.<br><br>
+                    <strong>Network Simulation Project</strong><br> Cisco Packet Tracer setup with ACL and DHCP.<br><br>
+                    <strong>Personal Portfolio</strong><br> A responsive site showcasing my skills and works.<br><br>
+                    <strong>Beast Breaker</strong><br> A Python-based game built using Pygame.<br><br>
+                    <strong>Sonore Music</strong><br> A PHP and XAMPP-powered online music store.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" style="scroll-margin-top:120px;">
-      <div class="card"
-        style="margin:18px 0; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.08); border:none; background:linear-gradient(135deg, #ffffff, #eaf6ff); transition:all .4s;">
-        <div class="card-body" style="padding:2rem;">
-          <h2 style="font-weight:600; color:#0078d7; margin-bottom:1rem;">Contact</h2>
-          <p style="color:#6c757d; font-size:1rem;">
-            Email: <a href="mailto:artuzjrchristopher@gmail.com"
-              style="color:#6c757d; text-decoration:none;">artuzjrchristopher@gmail.com</a>
-          </p>
-          <p style="color:#6c757d; font-size:1rem;">
-            Facebook: <a href="https://www.facebook.com/cj.artuz" target="_blank" rel="noopener noreferrer"
-              style="color:#6c757d; text-decoration:none;">facebook.com/cj.artuz</a>
-          </p>
-          <p style="color:#6c757d; font-size:1rem;">
-            GitHub: <a href="https://github.com/sijey-CJAA" target="_blank" rel="noopener noreferrer"
-              style="color:#6c757d; text-decoration:none;">github.com/sijey-CJAA</a>
-          </p>
+    <!-- CONTACT -->
+    <section id="contact" class="py-2" style="scroll-margin-top:120px;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <button class="btn btn-gray w-100 text-primary border-white fw-semibold py-3 fs-5 rounded-4 shadow"
+              type="button" data-bs-toggle="collapse" data-bs-target="#contactContent" aria-expanded="false"
+              aria-controls="contactContent" style="transition: all 0.25s ease-in-out;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.2)';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.15)';">
+              Contact
+            </button>
+
+            <div class="collapse mt-3" id="contactContent">
+              <div class="card border-0 rounded-4 shadow-lg bg-gradient"
+                style="background: linear-gradient(135deg, #ffffff, #eaf6ff);">
+                <div class="card-body p-4">
+                  <h2 class="fw-semibold text-primary mb-3">Contact</h2>
+                  <p class="text-secondary fs-6 mb-2">
+                    Email:
+                    <a href="mailto:artuzjrchristopher@gmail.com" class="text-secondary text-decoration-none">
+                      artuzjrchristopher@gmail.com
+                    </a>
+                  </p>
+                  <p class="text-secondary fs-6 mb-2">
+                    Facebook:
+                    <a href="https://www.facebook.com/cj.artuz" target="_blank" rel="noopener noreferrer"
+                      class="text-secondary text-decoration-none">
+                      facebook.com/cj.artuz
+                    </a>
+                  </p>
+                  <p class="text-secondary fs-6 mb-0">
+                    GitHub:
+                    <a href="https://github.com/sijey-CJAA" target="_blank" rel="noopener noreferrer"
+                      class="text-secondary text-decoration-none">
+                      github.com/sijey-CJAA
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1FQZ3A8nY4p+OGpamoFVy38MVBnE+IbbVYUew+OrCXaR"
-    crossorigin="anonymous"></script>
 
-  <!-- Inline-style based theme toggle (fixed and using a boolean toggle) -->
-  <script>
-    (function () {
-      const toggleBtn = document.getElementById('modeToggle');
-      const body = document.body;
-      const nav = document.querySelector('.navigation');
-      const navSmallTexts = document.querySelectorAll('.nav-small');
-      const welcome = document.querySelector('.welcome-section');
-      const cards = document.querySelectorAll('.card');
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1FQZ3A8nY4p+OGpamoFVy38MVBnE+IbbVYUew+OrCXaR"
+      crossorigin="anonymous"></script>
 
-      // initial (light) colors
-      const light = {
-        bodyBg: '#f8f9fa',
-        bodyColor: '#222',
-        navBg: 'rgba(255,255,255,0.6)',
-        navText: '#6c757d',
-        welcomeBg: '#222',
-        welcomeColor: '#fff',
-        cardBg: 'linear-gradient(135deg, #ffffff, #eaf6ff)',
-        cardText: '#6c757d',
-        navBorder: 'rgba(255,255,255,0.3)'
-      };
+    <!-- Inline-style based theme toggle (fixed and using a boolean toggle) -->
+    <script>
+      (function () {
+        const toggleBtn = document.getElementById('modeToggle');
+        const body = document.body;
+        const nav = document.querySelector('.navigation');
+        const navSmallTexts = document.querySelectorAll('.nav-small');
+        const welcome = document.querySelector('.welcome-section');
+        const cards = document.querySelectorAll('.card');
 
-      // dark theme values
-      const dark = {
-        bodyBg: '#0f0f0f',
-        bodyColor: '#f2f2f2',
-        navBg: 'rgba(20,20,20,0.85)',
-        navText: '#9aa0a6',
-        welcomeBg: '#111',
-        welcomeColor: '#eee',
-        cardBg: 'linear-gradient(135deg, #1a1a1a, #232323)',
-        cardText: '#9aa0a6',
-        navBorder: 'rgba(255,255,255,0.06)'
-      };
+        // initial (light) colors
+        const light = {
+          bodyBg: '#f8f9fa',
+          bodyColor: '#222',
+          navBg: 'rgba(255,255,255,0.6)',
+          navText: '#6c757d',
+          welcomeBg: '#222',
+          welcomeColor: '#fff',
+          cardBg: 'linear-gradient(135deg, #ffffff, #eaf6ff)',
+          cardText: '#6c757d',
+          navBorder: 'rgba(255,255,255,0.3)'
+        };
 
-      let darkMode = false;
+        // dark theme values
+        const dark = {
+          bodyBg: '#0f0f0f',
+          bodyColor: '#f2f2f2',
+          navBg: 'rgba(20,20,20,0.85)',
+          navText: '#9aa0a6',
+          welcomeBg: '#111',
+          welcomeColor: '#eee',
+          cardBg: 'linear-gradient(135deg, #1a1a1a, #232323)',
+          cardText: '#9aa0a6',
+          navBorder: 'rgba(255,255,255,0.06)'
+        };
 
-      function applyLight() {
-        body.style.backgroundColor = light.bodyBg;
-        body.style.color = light.bodyColor;
-        if (nav) {
-          nav.style.background = light.navBg;
-          nav.style.borderColor = light.navBorder;
-        }
-        navSmallTexts.forEach(s => s.style.color = light.navText);
-        if (welcome) {
-          welcome.style.backgroundColor = light.welcomeBg;
-          welcome.style.color = light.welcomeColor;
-        }
-        cards.forEach(c => {
-          c.style.background = light.cardBg;
-          // set card inner body text colors (p, li, a, strong except h2)
-          c.querySelectorAll('p, li, a, strong').forEach(el => {
-            if (el.tagName.toLowerCase() !== 'h2') el.style.color = light.cardText;
+        let darkMode = false;
+
+        function applyLight() {
+          body.style.backgroundColor = light.bodyBg;
+          body.style.color = light.bodyColor;
+          if (nav) {
+            nav.style.background = light.navBg;
+            nav.style.borderColor = light.navBorder;
+          }
+          navSmallTexts.forEach(s => s.style.color = light.navText);
+          if (welcome) {
+            welcome.style.backgroundColor = light.welcomeBg;
+            welcome.style.color = light.welcomeColor;
+          }
+          cards.forEach(c => {
+            c.style.background = light.cardBg;
+            // set card inner body text colors (p, li, a, strong except h2)
+            c.querySelectorAll('p, li, a, strong').forEach(el => {
+              if (el.tagName.toLowerCase() !== 'h2') el.style.color = light.cardText;
+            });
           });
-        });
-        toggleBtn.textContent = '🌙 Night';
-        toggleBtn.setAttribute('aria-pressed', 'false');
-      }
+          toggleBtn.textContent = '🌙 Night';
+          toggleBtn.setAttribute('aria-pressed', 'false');
+        }
 
-      function applyDark() {
-        body.style.backgroundColor = dark.bodyBg;
-        body.style.color = dark.bodyColor;
-        if (nav) {
-          nav.style.background = dark.navBg;
-          nav.style.borderColor = dark.navBorder;
-        }
-        navSmallTexts.forEach(s => s.style.color = dark.navText);
-        if (welcome) {
-          welcome.style.backgroundColor = dark.welcomeBg;
-          welcome.style.color = dark.welcomeColor;
-        }
-        cards.forEach(c => {
-          c.style.background = dark.cardBg;
-          c.querySelectorAll('p, li, a, strong').forEach(el => {
-            if (el.tagName.toLowerCase() !== 'h2') el.style.color = dark.cardText;
+        function applyDark() {
+          body.style.backgroundColor = dark.bodyBg;
+          body.style.color = dark.bodyColor;
+          if (nav) {
+            nav.style.background = dark.navBg;
+            nav.style.borderColor = dark.navBorder;
+          }
+          navSmallTexts.forEach(s => s.style.color = dark.navText);
+          if (welcome) {
+            welcome.style.backgroundColor = dark.welcomeBg;
+            welcome.style.color = dark.welcomeColor;
+          }
+          cards.forEach(c => {
+            c.style.background = dark.cardBg;
+            c.querySelectorAll('p, li, a, strong').forEach(el => {
+              if (el.tagName.toLowerCase() !== 'h2') el.style.color = dark.cardText;
+            });
           });
-        });
-        toggleBtn.textContent = '☀️ Light';
-        toggleBtn.setAttribute('aria-pressed', 'true');
-      }
-
-      // initialize light theme
-      applyLight();
-
-      toggleBtn.addEventListener('click', () => {
-        darkMode = !darkMode;
-        if (darkMode) applyDark();
-        else applyLight();
-      });
-
-      // Optional: allow keyboard activation (Space / Enter) for accessibility
-      toggleBtn.addEventListener('keydown', (e) => {
-        if (e.key === ' ' || e.key === 'Enter') {
-          e.preventDefault();
-          toggleBtn.click();
+          toggleBtn.textContent = '☀️ Light';
+          toggleBtn.setAttribute('aria-pressed', 'true');
         }
-      });
-    })();
-  </script>
+
+        // initialize light theme
+        applyLight();
+
+        toggleBtn.addEventListener('click', () => {
+          darkMode = !darkMode;
+          if (darkMode) applyDark();
+          else applyLight();
+        });
+
+        // Optional: allow keyboard activation (Space / Enter) for accessibility
+        toggleBtn.addEventListener('keydown', (e) => {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            toggleBtn.click();
+          }
+        });
+      })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
