@@ -363,7 +363,6 @@
         const navSmallTexts = document.querySelectorAll('.nav-small');
         const cards = document.querySelectorAll('.card');
 
-        // 🎨 Theme Data
         const light = {
           bodyBg: '#f8f9fa',
           bodyColor: '#222',
@@ -386,7 +385,6 @@
 
         let darkMode = false;
 
-        // 🌗 Apply Theme Function
         function applyTheme(theme) {
           body.style.backgroundColor = theme.bodyBg;
           body.style.color = theme.bodyColor;
@@ -403,7 +401,6 @@
           });
         }
 
-        // 🌓 Toggle Theme
         function toggleTheme() {
           darkMode = !darkMode;
           if (darkMode) {
@@ -415,7 +412,6 @@
           }
         }
 
-        // Initialize Light Mode by Default
         applyTheme(light);
 
         toggleBtn.addEventListener('click', toggleTheme);
@@ -426,7 +422,6 @@
           }
         });
 
-        // ✅ No need to modify collapse — Bootstrap handles it automatically
       });
     </script>
 
