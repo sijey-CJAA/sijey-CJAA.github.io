@@ -8,18 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="pics/sijey_logo1.png">
-  <style>
-    .collapse-btn {
-      transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-    }
 
-    .collapse-btn:active,
-    .collapse-btn:focus {
-      transform: scale(0.99);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
-      outline: none;
-    }
-  </style>
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body
@@ -343,75 +334,8 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const toggleBtn = document.getElementById('modeToggle');
-        const body = document.body;
-        const nav = document.querySelector('.navigation');
-        const navSmallTexts = document.querySelectorAll('.nav-small');
-        const cards = document.querySelectorAll('.card');
-
-        const light = {
-          bodyBg: '#f8f9fa',
-          bodyColor: '#222',
-          navBg: 'rgba(255,255,255,0.6)',
-          navText: '#6c757d',
-          cardBg: 'linear-gradient(135deg, #ffffff, #eaf6ff)',
-          cardText: '#6c757d',
-          navBorder: 'rgba(255,255,255,0.3)'
-        };
-
-        const dark = {
-          bodyBg: '#0f0f0f',
-          bodyColor: '#f2f2f2',
-          navBg: 'rgba(20,20,20,0.85)',
-          navText: '#9aa0a6',
-          cardBg: 'linear-gradient(135deg, #1a1a1a, #232323)',
-          cardText: '#9aa0a6',
-          navBorder: 'rgba(255,255,255,0.06)'
-        };
-
-        let darkMode = false;
-
-        function applyTheme(theme) {
-          body.style.backgroundColor = theme.bodyBg;
-          body.style.color = theme.bodyColor;
-          if (nav) {
-            nav.style.background = theme.navBg;
-            nav.style.borderColor = theme.navBorder;
-          }
-          navSmallTexts.forEach(s => s.style.color = theme.navText);
-          cards.forEach(c => {
-            c.style.background = theme.cardBg;
-            c.querySelectorAll('p, li, a, strong').forEach(el => {
-              if (el.tagName.toLowerCase() !== 'h2') el.style.color = theme.cardText;
-            });
-          });
-        }
-
-        function toggleTheme() {
-          darkMode = !darkMode;
-          if (darkMode) {
-            applyTheme(dark);
-            toggleBtn.textContent = '☀️ Light';
-          } else {
-            applyTheme(light);
-            toggleBtn.textContent = '🌙 Night';
-          }
-        }
-
-        applyTheme(light);
-
-        toggleBtn.addEventListener('click', toggleTheme);
-        toggleBtn.addEventListener('keydown', e => {
-          if (e.key === ' ' || e.key === 'Enter') {
-            e.preventDefault();
-            toggleBtn.click();
-          }
-        });
-
-      });
-    </script>
+    <!-- external javascript -->
+    <script src="script.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

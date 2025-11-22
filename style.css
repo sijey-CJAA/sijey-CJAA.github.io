@@ -1,0 +1,80 @@
+/* styles.css - externalized CSS */
+
+/* Collapse button effects */
+.collapse-btn {
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.collapse-btn:active,
+.collapse-btn:focus {
+  transform: scale(0.99);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+  outline: none;
+}
+
+/* Light mode defaults (matches original inline light styles) */
+.navigation {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+/* Card default (kept as a safe baseline for cards using the .card class) */
+.card.bg-gradient {
+  background: linear-gradient(135deg, #ffffff, #eaf6ff);
+}
+
+/* Utility: small nav text color (will be overridden by JS theme if necessary) */
+.nav-small {
+  color: #6c757d;
+}
+
+/* Dark mode overrides (applied when <body> has .dark-mode) */
+body.dark-mode {
+  background-color: #0f0f0f !important;
+  color: #f2f2f2 !important;
+}
+
+body.dark-mode .navigation {
+  background: rgba(20, 20, 20, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+body.dark-mode .nav-small {
+  color: #9aa0a6 !important;
+}
+
+body.dark-mode .card.bg-gradient {
+  background: linear-gradient(135deg, #1a1a1a, #232323) !important;
+}
+
+body.dark-mode .card .text-secondary,
+body.dark-mode .card p,
+body.dark-mode .card li,
+body.dark-mode .card a,
+body.dark-mode .card strong {
+  color: #9aa0a6 !important;
+}
+
+/* Make sure .text-gray falls back sensibly */
+.text-gray {
+  color: #6c757d;
+}
+
+body.dark-mode .text-gray {
+  color: #9aa0a6 !important;
+}
+
+/* Button style for the mode toggle (keeps original blue look) */
+#modeToggle {
+  background-color: #0078d7;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Slight spacing utility to maintain original layout behaviour */
+.nav-links .me-3 {
+  margin-right: 0.75rem !important;
+}
