@@ -1,4 +1,3 @@
-// scripts.js - externalized JavaScript
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('modeToggle');
   const body = document.body;
@@ -6,10 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const navSmallTexts = document.querySelectorAll('.nav-small');
   const cards = document.querySelectorAll('.card');
 
-  // Keep a simple darkMode flag; actual style changes come via CSS .dark-mode class.
   let darkMode = false;
 
-  // Toggle CSS class on body to switch themes.
   function applyThemeClass() {
     if (darkMode) {
       body.classList.add('dark-mode');
@@ -25,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     applyThemeClass();
   }
 
-  // initialize with light theme
   applyThemeClass();
 
   toggleBtn.addEventListener('click', toggleTheme);
